@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>어바웃피싱 고객앱 VIP 시연 시나리오 — 회장님·투자자용 (9/9 오픈 프리뷰)</title>
+<style>
+:root{--blue:#0041FF;--blt:#F6F6F6;--blk:#111;--body:#333;--desc:#8A8A8A;--green:#111;--red:#C62828;--orange:#555;--purple:#666;--bg:#fff;--line:#E4E4E4;--soft:#F7F7F7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif;background:#fff;color:var(--body);font-size:14px;line-height:1.75}
+.wrap{max-width:860px;margin:0 auto;padding:48px 24px 100px}
+header{background:#fff;color:var(--blk);border-bottom:2px solid #111;padding:0 0 26px;margin-bottom:28px}
+header .tag{font-size:11px;letter-spacing:3px;color:var(--desc);font-weight:700}
+h1{font-size:26px;margin:8px 0 12px;letter-spacing:-.3px}
+header p{font-size:13.5px;color:var(--body)}
+.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;font-size:12px;color:var(--desc)}
+.meta span{border:1px solid var(--line);padding:3px 11px;border-radius:3px;background:#fff}
+.thesis{border:1px solid var(--line);border-left:3px solid var(--blue);padding:16px 20px;margin-bottom:30px;font-size:14.5px;color:var(--blk);background:var(--soft)}
+.thesis b{color:var(--blue)}
+h2.sec{font-size:16px;color:var(--blk);margin:44px 0 14px;padding-top:14px;border-top:1px solid #111;letter-spacing:-.2px}
+.card{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 22px;margin-bottom:12px}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);font-size:13px;margin-bottom:14px}
+th{background:var(--soft);color:var(--blk);font-weight:600;text-align:left;padding:9px 13px;border-bottom:1px solid var(--line)}
+td{padding:9px 13px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:none}
+.scene{background:#fff;border:1px solid var(--line);border-radius:6px;margin-bottom:16px;overflow:hidden}
+.scene-head{background:var(--soft);border-bottom:1px solid var(--line);padding:12px 20px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.scene-head .no{background:#111;color:#fff;font-weight:700;font-size:12px;border-radius:3px;padding:2px 9px}
+.scene-head h3{font-size:15px;color:var(--blk);font-weight:700}
+.scene-head .time{margin-left:auto;font-size:12px;color:var(--desc);font-weight:600}
+.scene-body{padding:16px 20px}
+.goal{font-size:12.5px;color:var(--desc);margin-bottom:10px}
+.steps{background:var(--soft);border:1px solid var(--line);border-radius:4px;padding:13px 16px;margin:10px 0}
+.steps b.lbl{display:block;font-size:12px;color:var(--blk);margin-bottom:6px}
+.steps ol{padding-left:20px}
+.steps li{margin:4px 0}
+.btn{display:inline-block;background:#fff;border:1px solid #CFCFCF;border-radius:3px;padding:0 7px;font-weight:600;color:var(--blk);font-size:12.5px;white-space:nowrap}
+.point{margin:10px 0;padding-left:2px}
+.point b{color:var(--blk);font-size:12.5px}
+.point ul{padding-left:18px;margin-top:4px}
+.point li{margin:3px 0}
+.ment{border-left:3px solid #111;background:#fff;padding:10px 16px;margin:12px 0;font-size:13.5px;color:var(--blk)}
+.ment .who{font-size:11px;font-weight:700;color:var(--desc);display:block;margin-bottom:4px;letter-spacing:1.5px}
+.ban{border:1px dashed #D89793;background:#fff;border-radius:4px;padding:9px 14px;margin:12px 0 0;font-size:12.5px;color:var(--body)}
+.ban b{color:var(--red)}
+.chip{display:inline-block;background:#fff;border:1px solid #CFCFCF;color:var(--body);font-weight:600;font-size:11.5px;border-radius:3px;padding:1px 9px;margin:3px 4px 3px 0}
+.numchip{display:inline-block;background:var(--red);color:#fff;font-weight:700;font-size:11px;border-radius:3px;padding:1px 8px;margin-right:8px}
+.okchip{display:inline-block;background:#fff;border:1px solid #CFCFCF;color:var(--body);font-weight:600;font-size:11.5px;border-radius:3px;padding:1px 9px;margin:3px 4px 3px 0}
+.qa{margin-bottom:14px}
+.qa .q{font-weight:700;color:var(--blk);margin-bottom:3px}
+.qa .screen{font-size:12px;color:var(--desc);font-weight:600}
+.memcard{background:#fff;border:2px solid #111;border-radius:6px;padding:22px 26px;margin-top:10px;color:var(--body)}
+.memcard h3{font-size:12px;color:var(--desc);margin-bottom:8px;letter-spacing:2px}
+.memcard p{font-size:13.5px;margin:6px 0 14px}
+.memcard b{color:#111}
+.memcard .no{color:var(--red);font-weight:700}
+.small{font-size:12px;color:var(--desc)}
+.flow{font-size:12.5px;color:var(--desc);margin-top:4px}
+.hl{font-weight:700;color:var(--blue);border-bottom:2px solid var(--blue);padding:0 1px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="tag">VIP DEMO SCRIPT · 9/9 OPEN PREVIEW</div>
+  <h1>어바웃피싱 고객앱 시연 시나리오</h1>
+  <p>보는 사람: <b>VIP 회장님 / 투자자</b> · 목표: 기능 소개가 아니라 <b>"투자하고 싶다"</b>는 마음을 만드는 것.<br>고객 한 명의 여정(발견→탐색→검색→예약→결제 직전)을 라이브로 완주하고, 9월 9일 오픈 공지로 끝냅니다.</p>
+  <div class="meta">
+    <span>PC Chrome · test-platform.aboutfishing.kr</span>
+    <span>계정 010-1234-0113 / 인증 0601</span>
+    <span>러닝타임 약 10분 + Q&A</span>
+    <span>근거: 2026-08-06 6차 QA 실측 경로만 사용</span>
+  </div>
+</header>
+
+<div class="thesis">
+  관통 메시지 — 오프닝과 클로징에서 두 번 말합니다:<br>
+  <b>"전화와 수기로 돌아가던 선상낚시 시장을, 데이터와 선결제로 돌아가는 인프라로 바꿉니다."</b>
+</div>
+
+<!-- ============================================ -->
+<h2 class="sec">한눈 요약 — 5막 구조와 심는 숫자</h2>
+<table>
+<tr><th style="width:56px">막</th><th style="width:150px">화면</th><th>증명하는 것 (투자 논점)</th><th style="width:170px">회장님 머리에 심는 숫자</th></tr>
+<tr><td>1막</td><td>오프닝+로그인</td><td>아날로그 시장 → 전환 타이밍, 진입장벽 제거</td><td>낚시인구 · 번호 하나로 로그인</td></tr>
+<tr><td>2막</td><td>홈 (새소식)</td><td>예약 앱이 아니라 <b>매일 여는 앱</b> — 노쇼 해결+광고 지면 가치</td><td><span class="hl">D-6</span> 리마인드</td></tr>
+<tr><td>3막</td><td>탐색 지도</td><td>물때·조황·CCTV·용품점 <b>데이터 해자</b></td><td><span class="hl">5레이어</span> · 조류세기 <span class="hl">60%</span></td></tr>
+<tr><td>4막</td><td>출조+통합검색</td><td>공급 밀도(마켓플레이스 유동성) + 실시간 트렌드 집계</td><td>중구 <span class="hl">36척</span> · 광어 <span class="hl">369건</span></td></tr>
+<tr><td>5막</td><td>예약 퍼널</td><td>거래·결제 레일 완결 — <b>선결제 = 노쇼 종식</b></td><td><span class="hl">90,000원×20자리</span> · 결제 <span class="hl">5종</span></td></tr>
+<tr><td>종막</td><td>9/9 공지</td><td>오픈 직전 = 지금이 승선 타이밍 (긴급성)</td><td><span class="hl">9월 9일</span></td></tr>
+</table>
+<p class="small">순서 논리: 투자자의 마음은 문제 공감 → 작동 증명 → 해자 확인 → 수익 확신 → 긴급성 순으로 열립니다. 손님의 사용 동선이 곧 이 순서가 되도록 짰습니다. 씬마다 숫자 하나씩만 심습니다 — 회장님이 돌아가서 남에게 옮기는 건 숫자입니다.</p>
+
+<!-- ============================================ -->
+<h2 class="sec">시연 전 준비 (T-30분 프리플라이트)</h2>
+<div class="card">
+<ul style="padding-left:18px">
+<li><b>크롬 세팅</b>: 확장프로그램 없는 클린 프로필 · 북마크바/OS 알림 끔 · 창 크기는 리허설과 동일하게 고정하고 <b>발표 중 리사이즈 금지</b> · 줌 125~150%로 회장님 시야 확보</li>
+<li><b>탭 3개 전략</b>: ① 시연용 — <span class="btn">/login</span> 화면 띄워 대기(주소 타이핑 리스크 제거) ② 예비 — 미리 로그인해 홈에 세워둔 백업 세션(사고 시 이 탭으로 전환) ③ 클로징 백업 — 9/9 공지 풀스크린을 미리 열어둔 탭</li>
+<li><b>사전 주행 1회</b>: "테슬란" 검색→상세→8/22 진입까지 갔다가 ←로 복귀 (로딩 캐시 소진 + 당일 데이터 확인 겸용)</li>
+<li><b>네트워크 이중화</b>: 핫스팟 대기 + 전체 씬 스크린샷 백업 덱 1부 (막히면 "화면으로 이어 설명드리겠습니다")</li>
+<li><b>지도 위 마우스 휠 금지</b> 연습 (의도치 않은 확대·이동 방지)</li>
+<li>오프닝에 쓸 시장 수치(낚시 인구 등)는 최신 공식 통계로 최종 확정</li>
+</ul>
+</div>
+
+<div class="card">
+<h3 style="font-size:14px;color:var(--blk);margin-bottom:8px">📌 당일 아침 확인 — "매일 바뀌는 값" 4가지</h3>
+<table style="margin-bottom:0">
+<tr><th>항목</th><th>대본 기준값 (8/6)</th><th>확인 방법</th></tr>
+<tr><td>홈 리마인드 D-숫자</td><td>D-6 (8/12 출조)</td><td>시연일에 맞는 D-값으로 멘트 수정</td></tr>
+<tr><td>테슬란호 8/22 잔여석</td><td>20자리 남음</td><td>사전 주행 때 실측값으로 멘트 수정</td></tr>
+<tr><td>실시간 검색순위 키워드</td><td>1위 쭈꾸미, 2위 문어…</td><td>매일 09시 갱신 — 당일 상위 키워드 확인</td></tr>
+<tr><td>지역·어종 검색 건수</td><td>중구 36척 / 광어 369건</td><td>변했으면 당일 숫자로 읽기</td></tr>
+</table>
+</div>
+
+<!-- ============================================ -->
+<h2 class="sec">절대 클릭 금지 구역 (8/6 6차 QA 기준)</h2>
+<div class="card">
+<p><span class="numchip">01</span><b>홈 상단 배너 3장 · 광고배너 · 이벤트 '자세히 보기' · '10,000원 할인' · 인기어종 카드</b> — 전부 무반응. 커서도 올리지 말고 스크롤로 통과, 언급만.</p>
+<p><span class="numchip">02</span><b>항구 시트의 '조황' 탭</b> — 에러 문구 노출. 항구 시트는 선박→물때→날씨 순서로만.</p>
+<p><span class="numchip">03</span><b>쿠폰 '적용'</b> — 2명 예약에 4인 쿠폰이 적용되는 상태. 노출까지만 보여주고 조건(4인 이상)을 입으로 읽는다.</p>
+<p><span class="numchip">04</span><b>최종 결제 버튼 · 예약취소 · 로그아웃 · 회원탈퇴 · 전화하기 · CCTV 외부에서 보기</b> — 클릭 금지.</p>
+<p><span class="numchip">05</span><b>CCTV·낚시용품점 댓글 클로즈업 금지</b> — 전 지점 동일한 더미. 레이어는 입으로만 언급.</p>
+<p class="small" style="margin-top:8px">※ 지난 리포트의 '고객센터 404'는 수정 배포로 해소(준비중 안내로 변경). 그래도 시연 중 누를 이유는 없음.</p>
+</div>
+
+<!-- ============================================ -->
+<h2 class="sec">씬별 대본</h2>
+
+<!-- 씬0 -->
+<div class="scene">
+  <div class="scene-head"><span class="no">씬 0</span><h3>오프닝 후킹 — 화면은 로그인 대기</h3><span class="time">0:00–1:00</span></div>
+  <div class="scene-body">
+    <div class="goal">목적: 시장이 얼마나 아날로그인지 공감시키고 "라이브로 보여드린다"를 선언</div>
+    <div class="ment"><span class="who">대표님 멘트</span>"회장님, 주변에 배낚시 다니시는 분 휴대폰을 한번 보십시오. 아직도 선장님께 전화 걸고, 계좌이체 하고, 밴드에 이름 올려 예약합니다. 그러다 노쇼 나고, 자리 겹치고, 정산 문제로 얼굴 붉히는 게 낚시 인구 700만 시대의 예약 현실입니다. 저희는 이 시장을 전화와 수기에서 <b>데이터와 선결제</b>로 옮기고 있고, 9월 9일 정식으로 문을 엽니다. 오늘은 자료 대신, 지금 실제로 돌아가는 서비스를 그대로 보여드리겠습니다."</div>
+  </div>
+</div>
+
+<!-- 씬1 -->
+<div class="scene">
+  <div class="scene-head"><span class="no">씬 1</span><h3>로그인 — 진입 마찰 제로</h3><span class="time">1:00–1:40</span></div>
+  <div class="scene-body">
+    <div class="goal">투자 논점: 고연령 사용자층의 이탈 방어 = 전환율 설계</div>
+    <div class="steps"><b class="lbl">조작</b>
+      <ol>
+        <li><span class="btn">휴대폰번호로 시작하기</span> 클릭</li>
+        <li><b>010-1234-0113</b> 입력 → 인증번호 자동 발송</li>
+        <li><b>0601</b> 입력 → 확인 버튼 없이 <b>자동 로그인</b> → 홈</li>
+      </ol>
+    </div>
+    <div class="point"><b>짚을 것</b><ul><li>인증번호 4자리째 입력과 동시에 홈으로 넘어가는 순간</li></ul></div>
+    <div class="ment"><span class="who">멘트</span>"들어가는 것부터 보시죠. 전화번호 하나, 인증번호 하나 — 비밀번호도 확인 버튼도 없습니다. 배낚시 손님은 연령대가 높아서 가입에서 막히면 그대로 이탈합니다. 그래서 문턱을 최대한 깎았습니다. (테스트 계정이라 인증번호가 자동으로 들어오고, 실서비스에선 문자로 받습니다.)"</div>
+  </div>
+</div>
+
+<!-- 씬2 -->
+<div class="scene">
+  <div class="scene-head"><span class="no">씬 2</span><h3>홈 — "예약 앱이 아니라 매일 여는 앱"</h3><span class="time">1:40–4:00</span></div>
+  <div class="scene-body">
+    <div class="goal">투자 논점: 노쇼 해결(D-6 리마인드) + 데일리 트래픽 = 광고 지면 가치 · 복선 2개 심기</div>
+    <div class="steps"><b class="lbl">조작 ① — D-6 카드와 실결제 기록 (복선 1)</b>
+      <ol>
+        <li>최상단 <span class="btn">D-6 · 다음주 수요일 출조 잊지 않으셨죠?</span> 카드 클릭 → 예약 상세</li>
+        <li>짚기: <b>자리배정 '지정'</b> 라벨 · <b>네이버페이 결제 기록</b></li>
+        <li>좌상단 <b>←</b>로 홈 복귀 (브라우저 뒤로가기 아님)</li>
+      </ol>
+    </div>
+    <div class="ment"><span class="who">멘트</span>"홈부터 보십시오. 이 손님은 엿새 뒤 쭈꾸미 배를 타는데, 앱이 먼저 알고 챙깁니다. 이 시장 최대 골칫거리가 노쇼인데, 이 카운트다운 하나로 눈에 띄게 줄어듭니다. 그리고 여기 — <b>네이버페이로 결제된 실거래 기록</b>입니다. 오늘 보시는 게 목업이 아니라 진짜 돈이 도는 시스템이라는 걸 먼저 보여드리고 시작하겠습니다."</div>
+    <div class="steps"><b class="lbl">조작 ② — 날씨·물때 위젯</b>
+      <ol>
+        <li>인천항 옆 <span class="btn">˅</span> 클릭 → 관심장소 시트 (복사초·개도·완도항… 짚고 닫기)</li>
+        <li><span class="btn">인천항 주말 날씨는?</span> 클릭 → 포인트 시트: <b>물때 차트 → 시간별·주간 날씨 → 조황 기록</b> 손가락 3연속 → 닫기</li>
+      </ol>
+    </div>
+    <div class="ment"><span class="who">멘트</span>"낚시꾼은 출조 일주일 전부터 매일 파고와 물때를 봅니다. 그 확인을 저희 홈에서 하게 만들었습니다. 항구가 아니라 '복사초' 같은 포인트 단위까지 등록됩니다 — 낚시인의 해상도 그대로죠. 예약이 없는 날에도 매일 여는 앱이 되는 순간, 이 지면의 광고 가치가 완전히 달라집니다."</div>
+    <div class="steps"><b class="lbl">조작 ③ — 쿠폰함(복선 2)과 조황 피드</b>
+      <ol>
+        <li>바로가기에서 <span class="btn">쿠폰함</span> 클릭 → <b>단체예약 10% 쿠폰 · 4인 이상 · D-30</b> 짚고 ← ("이 쿠폰, 잠시 뒤 예약 단계에서 다시 만납니다")</li>
+        <li>스크롤 내려 <b>팔로잉 활동</b> 조황 글 1건 클릭 → 조과 사진 짚고 ←</li>
+      </ol>
+    </div>
+    <div class="ment"><span class="who">멘트</span>"손님들이 남긴 조황이 다음 손님의 예약 근거가 됩니다. 회원 조황 글이 이미 300건 넘게 쌓였습니다. 저희가 쓴 글이 아니라서, 경쟁사가 돈 주고도 못 사는 자산입니다."</div>
+    <div class="ban"><b>금지</b> — 상단 배너·이벤트·1만원·광고배너·인기어종 카드: 커서 접근 금지, 스크롤 통과. 어종 트렌드는 입으로만("이번 주 우럭 검색이 24% 올랐습니다").</div>
+  </div>
+</div>
+
+<!-- 씬3 -->
+<div class="scene">
+  <div class="scene-head"><span class="no">씬 3</span><h3>탐색 지도 — 데이터 해자 (시각적 피크 1)</h3><span class="time">4:00–6:00</span></div>
+  <div class="scene-body">
+    <div class="goal">투자 논점: "이번 주말 어디 가지?"라는 의사결정 자체를 이 지도 위에서 하게 만들었다</div>
+    <div class="steps"><b class="lbl">조작</b>
+      <ol>
+        <li>하단 GNB <span class="btn">탐색</span> 클릭 → 전국 지도</li>
+        <li>상단 레이어 칩 5종을 <b>손짓으로 훑기</b>: 포인트 / 조황 / 선박 / CCTV / 낚시용품점</li>
+        <li><span class="btn">선박</span> 칩 클릭 → 전국 항구 클러스터 (줌 조작 없이 전국 뷰 유지)</li>
+        <li><span class="btn">홍원항</span> 마커 클릭 → 항구 시트: 선박 목록(팬텀호·페라리호 가격·어종) → <span class="btn">물때</span> 탭 → <b>조류세기 60% 게이지 + 간조·만조 그래프에서 3초 정지</b> → <span class="btn">날씨</span> 탭 짧게 → X로 닫기</li>
+        <li><span class="btn">조황</span> 칩 클릭 → 전국 조황 마커 분포만 짚기</li>
+      </ol>
+    </div>
+    <div class="ment"><span class="who">멘트</span>"이 지도가 저희 자산입니다. 낚시 포인트, 실시간 조황, 선박 가격, 항구 CCTV, 용품점까지 다섯 개 층을 한 지도에 쌓았습니다. 항구 하나를 누르면 그 항구의 배와 물때, 날씨가 한 번에 나옵니다. 낚시 예약의 본질은 '언제 물이 좋은가'인데, 그 데이터를 예약 동선 안에 넣은 것이 저희 진입장벽입니다. 예약 버튼은 누구나 만들지만, 이 데이터층은 시간을 사야 생깁니다."</div>
+    <div class="ban"><b>금지</b> — 항구 시트의 <b>조황 탭</b> 클릭 금지(에러 문구) · CCTV/용품점 칩은 클릭하지 않고 입으로만 · 지도 위 마우스 휠 금지.</div>
+  </div>
+</div>
+
+<!-- 씬4 -->
+<div class="scene">
+  <div class="scene-head"><span class="no">씬 4</span><h3>출조 + 통합검색 — 공급 밀도와 실시간 트렌드</h3><span class="time">6:00–7:20</span></div>
+  <div class="scene-body">
+    <div class="goal">투자 논점: 마켓플레이스의 생명 = 공급 유동성. "손님이 와도 배가 없으면 장사가 안 되는데, 배는 이미 저희 안에 있습니다"</div>
+    <div class="steps"><b class="lbl">조작</b>
+      <ol>
+        <li>하단 GNB <span class="btn">출조</span> 클릭 (상단 공지바는 <b>아직 누르지 않는다</b> — 클로징용)</li>
+        <li>지역 아코디언 <span class="btn">인천</span> → <span class="btn">중구 (36)</span> 클릭 → 36건 목록 반 페이지 스크롤 → ←</li>
+        <li><span class="btn">빠른 선박 찾기 시작</span> → 어종 <span class="btn">광어</span> → <span class="btn">검색</span> → <b>369건</b> 짚기 → ←</li>
+        <li>우상단 <span class="btn">🔍</span> → 통합검색: <b>실시간 검색순위 1~10</b> 짚기 → 검색창에 정확히 <b>"테슬란"</b> 입력 → 업체 1건 적중</li>
+      </ol>
+    </div>
+    <div class="ment"><span class="who">멘트</span>"인천 중구 한 지역에만 서른여섯 척, 광어 하나로 전국 369건이 잡힙니다. 그리고 이 검색 순위 — 지금 낚시꾼들이 뭘 노리는지가 매일 아침 실데이터로 갱신됩니다. 이 시장의 트렌드 집계를 저희가 하고 있다는 뜻입니다. 이제 '테슬란'을 검색해서, 실제 예약을 결제 직전까지 끝까지 밟아보겠습니다."</div>
+    <div class="ban"><b>금지</b> — 태백8호 쿠폰 다운로드 버튼(짚기만).</div>
+  </div>
+</div>
+
+<!-- 씬5 -->
+<div class="scene">
+  <div class="scene-head"><span class="no">씬 5</span><h3>예약 퍼널 — 클라이맥스: 거래가 완결된다</h3><span class="time">7:20–9:20</span></div>
+  <div class="scene-body">
+    <div class="goal">투자 논점: 검색부터 결제수단 선택까지 2분 = 커머스 완결성 + 선결제 구조 + 결제 원가 설계</div>
+    <div class="steps"><b class="lbl">조작 ① — 선박 상세</b>
+      <ol>
+        <li>검색 결과 <span class="btn">테슬란호</span> 클릭 → 상세</li>
+        <li>짚기: <b>"사용할 수 있는 쿠폰 1장 · 보유중"</b> 배지("아까 그 쿠폰을 상세가 자동 감지합니다") → <b>7·8·9월 3개월 캘린더의 절기·공휴일 라벨</b> → <b>8/22 파란색 = 예약 가능</b></li>
+      </ol>
+    </div>
+    <div class="steps"><b class="lbl">조작 ② — 날짜·상품·인원</b>
+      <ol>
+        <li><span class="btn">22</span>(8월) 클릭 → 하단 상품 카드: <b>백조기 90,000원 · 20자리 남음 · 04:30~16:30 · "출조일 3일 전까지 무료 취소"</b> 짚기</li>
+        <li><span class="btn">예약하기</span> → 예약상품 화면: 남은자리 20/20, 인원 스테퍼 <span class="btn">＋</span> 두 번 = <b>대인 2</b> → 하단 버튼이 <b>비활성→활성으로 켜지는 순간</b> 짚기</li>
+        <li><span class="btn">예약 정보 입력하기</span> 클릭</li>
+      </ol>
+    </div>
+    <div class="ment"><span class="who">멘트</span>"한 자리 9만 원, 스무 자리 — 이 배 하루 매출이 180만 원 규모고 여기에 저희 수수료가 붙습니다. 잔여석은 실시간 차감형이라, '전화했더니 자리 없다'는 이 시장 최대 불신을 구조로 없앴습니다."</div>
+    <div class="steps"><b class="lbl">조작 ③ — 예약접수 화면 (가장 천천히 스크롤)</b>
+      <ol>
+        <li>짚기 1: <b>예약자명·전화번호 자동 입력</b> — "타이핑 제로"</li>
+        <li>짚기 2: <b>내 쿠폰 1장 사용 가능</b> — <span style="color:var(--red);font-weight:700">누르지 않고</span> 멘트로만: "이 쿠폰은 4인 이상 단체 조건이라 오늘 2인 건에는 해당이 없습니다"</li>
+        <li>짚기 3: <b>결제 금액 180,000원</b> 자동 계산</li>
+        <li>짚기 4: <b>결제수단 5종</b> 위에서 아래로 — 퀵계좌이체(0.3% 할인+소득공제 뱃지) / 신용·체크카드(신한 무이자) / 네이버페이(적립) / 토스페이 / 카카오페이</li>
+        <li>짚기 5: 예약 안내 문구 <b>"결제가 완료되면 예약 신청이 완료돼요"</b></li>
+        <li><span class="btn">네이버페이</span> 선택까지만 하고 <b>정지</b></li>
+      </ol>
+    </div>
+    <div class="ment"><span class="who">멘트 — 정지하며 (복선 회수)</span>"퀵계좌이체에 0.3% 할인이 붙어 있죠 — 수수료가 싼 결제로 유도해 마진까지 설계합니다. 그리고 이 문구가 이 사업의 핵심입니다. <b>'결제가 완료되면 예약 신청이 완료돼요.' 선결제입니다.</b> 노쇼가 매출 손실이 아니라 환불 규정의 문제로 바뀝니다. 결제 버튼은 실서비스 보호 차원에서 여기까지만 누르겠습니다 — 실제로 돈이 돈다는 건 처음에 보신 네이버페이 결제 기록이 증명하고, 이 버튼의 다음 화면은 9월 9일 첫 고객이 직접 열게 됩니다."</div>
+    <div class="ban"><b>금지</b> — 최종 결제 클릭 · 쿠폰 적용 · 약관 체크 · 전화하기. 이탈은 좌상단 ←로만(단계별 복귀 검증 완료).</div>
+  </div>
+</div>
+
+<!-- 씬6 -->
+<div class="scene">
+  <div class="scene-head"><span class="no">씬 6</span><h3>클로징 — 9월 9일 공지가 마지막 슬라이드</h3><span class="time">9:20–10:00</span></div>
+  <div class="scene-body">
+    <div class="goal">투자 논점: 긴급성 — 오픈 직전이 가장 좋은 진입 시점</div>
+    <div class="steps"><b class="lbl">조작</b>
+      <ol>
+        <li>좌상단 <b>←</b> 2~3회로 퍼널 이탈 → 하단 GNB <span class="btn">출조</span> (이동 중 멘트로 공백 메우기: "방금 보신 게 검색부터 결제 직전까지 2분입니다. 전화 예약으로는 반나절 걸리던 일입니다")</li>
+        <li>상단 공지바 <span class="btn">8월 5일 - 어바웃피싱 업데이트 소식</span> 클릭 → <b>"9월, 어바웃피싱이 한층 새로워집니다 · 9월 9일 만나보세요"</b> 풀스크린</li>
+        <li>이 화면을 띄운 채 마무리 — 홈으로 돌아가지 않는다</li>
+      </ol>
+    </div>
+    <div class="ment"><span class="who">클로징 멘트</span>"오늘 보신 홈·지도·검색·결제가 8월에 하나로 통합됐고, 9월 9일 이 화면 그대로 전국에 열립니다. 낚시에서 가장 설레는 순간이 출항 직전이라고들 하는데, 저희가 지금 그 지점에 서 있습니다. 전화와 수기로 돌던 시장이 데이터와 선결제로 돌아가는 첫날에, 회장님께서 가장 먼저 승선해 주시면 좋겠습니다. 구체적인 조건은 자료로 준비해 두었습니다."</div>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<h2 class="sec">돌발 대응 프로토콜</h2>
+<table>
+<tr><th style="width:230px">상황</th><th>대응</th></tr>
+<tr><td>화면이 멈추거나 이상함</td><td>① 앱 내 ← → ② 하단 홈 탭 → ③ 예비 탭(미리 로그인해 둔 홈)으로 전환: "미리 로그인해 둔 화면으로 이어가겠습니다"</td></tr>
+<tr><td>"결제 끝까지 해봐"</td><td>"실PG 연동이라 실제 과금됩니다" → 홈 D-6 카드 → 예약상세의 <b>네이버페이 실결제 기록</b>으로 갈음 (검증된 경로)</td></tr>
+<tr><td>"CCTV 틀어봐"</td><td>"제공처 영상으로 연결되는 구조라 시연망에서는 생략하고, 오픈 버전에서 보여드리겠습니다" (CCTV는 애초에 화면에 띄우지 않음)</td></tr>
+<tr><td>"배너 눌러봐"</td><td>"배너는 9/9 오픈 캠페인이 연결될 자리라, 오늘은 예약 흐름 위주로 보여드리겠습니다"</td></tr>
+<tr><td>잔여석 20/20을 보고 "아무도 예약 안 했네?"</td><td>판매율이 아니라 기능으로 프레이밍: "시연 서버라 좌석을 리셋해 둔 상태고, 보실 부분은 <b>실시간 차감 구조</b>입니다"</td></tr>
+<tr><td>항구 조황 질문</td><td>항구 시트가 아니라 <b>지도 조황 레이어</b>로 우회해서 보여주기</td></tr>
+<tr><td>예약접수 이탈 시 확인 팝업</td><td>리허설에서 확인해 두고, 뜨면 '나가기' 즉시 클릭</td></tr>
+</table>
+
+<!-- ============================================ -->
+<h2 class="sec">예상 질문 Q&A — 화면으로 받아치기</h2>
+<div class="card">
+  <div class="qa"><div class="q">Q1. "배들이 왜 여기 들어옵니까? 들어와도 남아 있을까요?"</div>
+  <div class="screen">받아치는 화면: 출조 탭 — 중구 36척, 광어 369건</div>
+  선주는 선주앱으로 상품·예약·정산을 관리하고 선장앱으로 당일 운항까지 봅니다. 노쇼와 수기 정산 분쟁을 없애주니 선주가 먼저 들어옵니다. 한 항구를 채우고 옆 항구로 넓히는 방식이라, 손님 입장에선 '여기 오면 배가 다 있는' 상태가 됩니다.</div>
+  <div class="qa"><div class="q">Q2. "그래서 뭘로 돈을 법니까?"</div>
+  <div class="screen">받아치는 화면: 예약접수(수수료·쿠폰·결제 5종) + 홈 배너 지면</div>
+  축이 네 개입니다 — 예약 수수료, 결제, 광고(기획전·단독 확보 좌석), 쿠폰 마케팅. 거래·결제·프로모션이 전부 저희 화면 안에서 일어나서 한 손님에게서 네 개가 다 잡힙니다. 퀵계좌이체 0.3% 할인처럼 결제 원가까지 저희가 설계합니다.</div>
+  <div class="qa"><div class="q">Q3. "네이버·카카오가 들어오면요?"</div>
+  <div class="screen">받아치는 화면: 지도 5레이어 + 회원조황 300건+ + 실시간 검색순위</div>
+  예약 버튼은 누구나 만듭니다. 그런데 회원들이 쌓아준 조황 기록, 물때·CCTV·검색순위 데이터층, 선주·선장 양면 운영 노하우는 돈이 아니라 시간을 사야 생깁니다. 큰 회사가 쳐다볼 만큼 시장이 커졌다는 건 오히려 저희 논거고, 그때 저희는 이미 이 판의 기본 인프라가 되어 있을 겁니다.</div>
+  <div class="qa"><div class="q">Q4. "노쇼·정산 분쟁, 정말 해결됩니까?"</div>
+  <div class="screen">받아치는 화면: "결제가 완료되면 예약 신청이 완료돼요" + D-6 카드</div>
+  두 겹입니다. 구조적으로는 선결제라 노쇼가 매출 손실이 아니라 환불 규정 문제로 바뀌고, 행동적으로는 D-6부터 리마인드로 '잊는 노쇼'를 줄입니다. 결제가 저희 레일 위에서 도니 수기 이체에서 나오던 정산 분쟁 자체가 사라집니다.</div>
+  <div class="qa" style="margin-bottom:0"><div class="q">Q5. "낚시는 계절 장사 아닙니까?"</div>
+  <div class="screen">받아치는 화면: 홈 인기어종(우럭 24%↑) + 날씨·물때 위젯</div>
+  바다는 사철 어종이 돕니다. 여름 백조기, 가을 쭈꾸미·갑오징어, 겨울 우럭·열기로 타깃이 바뀔 뿐 출조는 연중 이어지고, 인기어종 데이터로 시즌마다 수요를 갈아탑니다. 예약이 없어도 날씨·물때·조황 보러 매일 들어오게 만들어서, 비수기에도 트래픽과 광고 지면은 살아 있습니다.</div>
+</div>
+
+<!-- ============================================ -->
+<h2 class="sec">백업 씬 (질문 나올 때만)</h2>
+<div class="card">
+<ul style="padding-left:18px">
+<li><b>"고객 관리 화면은?"</b> → 하단 <span class="btn">마이</span>: D-6 배너 → 쿠폰함 → 알림설정 토글까지만. <span style="color:var(--red)">예약내역 '취소 2' 숫자에 커서 두지 않기, 알림 목록의 광고 항목 클릭 금지.</span></li>
+<li><b>"콘텐츠는 누가 만드나?"</b> → 탐색 <span class="btn">조황</span> 레이어 → <span class="btn">조황/조과 등록</span> → 위치 지정 화면까지 진입 후 <span class="btn">취소</span>.</li>
+<li><b>"큐레이션 커머스 되나?"</b> → 홈 바로가기 <span class="btn">인기선박</span> → 기획전 "어피 추천 인기선박" 지역 필터.</li>
+</ul>
+</div>
+
+<!-- ============================================ -->
+<h2 class="sec">시연자 암기 카드 — 이 한 장만 외우면 됩니다</h2>
+<div class="memcard">
+  <h3>NUMBERS TO SAY</h3>
+  <p><b>D-6</b> 리마인드 · 지도 <b>5레이어</b> · 조류세기 <b>60%</b> · 중구 <b>36척</b> · 광어 <b>369건</b> · <b>90,000원×20자리</b> · 대인 <b>2명=180,000원</b> · 결제 <b>5종·0.3%</b> · 회원조황 <b>300건+</b> · <b>9월 9일</b></p>
+  <h3 style="margin-top:16px">ONE KEYWORD</h3>
+  <p>검색어는 단 하나 — <b>"테슬란"</b></p>
+  <h3 style="margin-top:16px">NEVER</h3>
+  <p class="no">최종결제 · 쿠폰 적용 · 예약취소 · 홈 배너류 · 항구 시트 조황 탭 · CCTV 외부보기 · 전화하기 · 댓글 클로즈업</p>
+  <h3 style="margin-top:16px">IF STUCK</h3>
+  <p>← 뒤로가기 → 홈 탭 → 예비 탭 전환.</p>
+  <h3 style="margin-top:16px">TWO CALLBACKS</h3>
+  <p>① 홈의 <b>네이버페이 실결제 기록</b> → 씬 5 정지 멘트에서 회수 ② <b>쿠폰함</b> → 상세 '보유중' 배지에서 회수</p>
+</div>
+
+<p class="small" style="margin-top:26px">기반: 2026-08-06 6차 QA 실측(전 화면·전 뎁스·F5·뒤로가기 검증) + 내부 시연 큐카드·5분 진행표 레퍼런스 2건 + 사업전략·CPO 관점 검토. 시연 전 리허설 1회 필수 — "매일 바뀌는 값" 4가지는 당일 아침 확인.</p>
+
+</div>
+</body>
+</html>
